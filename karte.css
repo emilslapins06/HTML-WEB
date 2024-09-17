@@ -1,0 +1,14 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+.flex-container {flex-direction: row;}
+
+.card1 {background-color:lightblue; text-align: center; margin: 60px;}
+.card2 {background-color:lightblue; text-align: center; margin: 60px;}
+.card3 {background-color:lightblue; text-align: center; margin: 60px;}
+
+body {background-color:deepskyblue;}
+header {text-align: center; background-color: rgb(201, 211, 200);}
