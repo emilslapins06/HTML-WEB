@@ -1,7 +1,7 @@
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   }
 
 .flex-container {flex-direction: row;}
@@ -10,7 +10,7 @@
   background-color:lightblue; 
   text-align: center; 
   margin: 60px;
-  border-radius: 10px;  
+  border-radius: 10px; 
 }
 .card2 {
   background-color:lightblue;
@@ -28,14 +28,20 @@
 .card1:hover{
   background-color: lightskyblue;
   box-shadow: 10px 10px;
+  animation-name: shift;
+  animation-duration: 0.5s;
 }
 .card2:hover{
   background-color: lightskyblue;
   box-shadow: 10px 10px;
+  animation-name: shift;
+  animation-duration: 0.5s;
 }
 .card3:hover{
   background-color: lightskyblue;
   box-shadow: 10px 10px;
+  animation-name: shift;
+  animation-duration: 0.5s;
 }
 
 body {
@@ -47,7 +53,29 @@ header {
   background-color: rgb(201, 211, 200);
 }
 
+.button {
+  background-color: deepskyblue;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.button:hover{
+  animation-name: buttons;
+  animation-duration: 0.5s;
+}
+
 @keyframes shift {
   from {background-color: lightblue;}
   to {background-color: lightskyblue;}
+  from {box-shadow: 0px 0px;}
+  to {box-shadow: 10px 10px;}
+}
+
+@keyframes buttons {
+  from {background-color: deepskyblue;}
+  to {background-color: lightcyan;}
+  from {box-shadow: 0px 0px; color: black;}
+  to {box-shadow: 4px 4px; color: black;}
 }
