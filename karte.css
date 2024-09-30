@@ -59,6 +59,8 @@ header {
   text-align: center;
   font-size: 16px;
   border-radius: 10px;
+  padding:10px 20px;
+  cursor:pointer;
 }
 
 .button:hover{
