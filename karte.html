@@ -30,7 +30,7 @@
                 <div class="container">
                     <h4><b>RVT</b></h4>
                     <p>Rīgas Valsts Tehnikums, Rīga</p>
-                    <button class="button">Aplūkot</button>
+                    <button onclick="document.getElementById('teksts1').style.display='block'" class="button">Aplūkot</button>
                 </div>
             </div>
             <div class="card2">
@@ -38,7 +38,7 @@
                 <div class="container">
                     <h4><b>OVT</b></h4>
                     <p>Ogres Tehnikums, Ogre</p>
-                    <button class="button">Aplūkot</button>
+                    <button onclick="document.getElementById('teksts2').style.display='block'" class="button">Aplūkot</button>
                 </div>
             </div>
             <div class="card3">
@@ -46,10 +46,40 @@
                 <div class="container">
                     <h4><b>RTK</b></h4>
                     <p>Rīgas Tehniskā Koledža, Rīga</p>
-                    <button class="button">Aplūkot</button>
+                    <button onclick="document.getElementById('teksts3').style.display='block'"  class="button">Aplūkot</button>
                 </div>
             </div>
         </div>
-        
+
+        <div id="teksts1" class="button">
+            <div class="content">
+                <div class="container">
+                    <span onclick="document.getElementById('teksts1').style.display='none'"
+                    class="button display">&times;</span>
+                    <p>rvtinfo</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="teksts2" class="button">
+            <div class="content">
+                <div class="container">
+                    <span onclick="document.getElementById('teksts2').style.display='none'"
+                    class="button display">&times;</span>
+                    <p>ovtinfo</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="teksts3" class="button">
+            <div class="content">
+                <div class="container">
+                    <span onclick="document.getElementById('teksts3').style.display='none'"
+                    class="button display">&times;</span>
+                    <p>rtkinfo</p>
+                </div>
+            </div>
+        </div>
+    </main>    
 </body>
 </html>
